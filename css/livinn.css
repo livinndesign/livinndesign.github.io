@@ -3304,9 +3304,9 @@ blockquote {
 
 .collection-list {
   grid-column-gap: 1rem;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1rem;
   grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -3320,6 +3320,7 @@ blockquote {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 0%;
 }
 
 .about-team_overlay {
@@ -5905,6 +5906,12 @@ blockquote {
   padding-bottom: 3rem;
 }
 
+.home-hero_image-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 991px) {
   body {
     font-size: 14px;
@@ -6010,6 +6017,7 @@ blockquote {
 
   .menu-button {
     z-index: 1001;
+    padding-right: 0;
   }
 
   .menu-button.w--open {
@@ -6279,6 +6287,14 @@ blockquote {
     margin-left: 0;
   }
 
+  .home-hero_slider {
+    min-height: 28rem;
+  }
+
+  .home-hero_slide {
+    max-width: 100%;
+  }
+
   .home-project_block {
     width: 100%;
   }
@@ -6357,6 +6373,10 @@ blockquote {
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
+  }
+
+  .collection-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .about-process_component {
@@ -6504,6 +6524,24 @@ blockquote {
     padding-right: 0;
   }
 
+  .heading-style-h2 {
+    font-size: 2rem;
+  }
+
+  .cta_left-content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .cta_footer {
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.5rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
   .margin-bottom-8, .margin-bottom-9, .margin-bottom-10, .margin-bottom-11 {
     margin-top: 0;
     margin-left: 0;
@@ -6512,6 +6550,14 @@ blockquote {
 
   .team4_list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .faq_component {
+    padding: 2rem 2.5rem;
+  }
+
+  .heading-style-h3 {
+    font-size: 1.25rem;
   }
 
   .margin-bottom-12 {
@@ -6557,6 +6603,10 @@ blockquote {
   .padding-section-small {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .home-hero_image-logo {
+    width: 80%;
   }
 }
 
@@ -7021,8 +7071,16 @@ blockquote {
     white-space: normal;
   }
 
+  .home-contact_image {
+    min-height: 24rem;
+  }
+
   .image-slide {
     background-repeat: no-repeat;
+  }
+
+  .collection-list {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .form-radio-button-field {
@@ -7099,6 +7157,10 @@ blockquote {
 
   .text-size-medium-3 {
     font-size: 1rem;
+  }
+
+  .header73_component {
+    margin-top: 2rem;
   }
 
   .layout2_component {
@@ -7180,12 +7242,57 @@ blockquote {
     padding-right: 0;
   }
 
-  .footer_component {
-    background-image: none;
-    align-items: flex-start;
+  .cta_content-wrapper {
+    height: auto;
+    max-height: none;
+    grid-template-columns: 1fr;
   }
 
-  .margin-bottom-8, .margin-bottom-9 {
+  .cta_left-content {
+    min-height: 16rem;
+  }
+
+  .cta_footer {
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    margin-top: 1rem;
+    display: grid;
+  }
+
+  .footer_component {
+    align-items: center;
+  }
+
+  .home-hero_bar-wrapper {
+    top: -7rem;
+  }
+
+  .home-hero_bar {
+    height: 11rem;
+  }
+
+  .margin-bottom-8 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-projects_component {
+    grid-template-columns: 1fr;
+  }
+
+  .about-projects_right-container {
+    grid-row-gap: 2rem;
+  }
+
+  .about-projects_left-container, .about-projects_right-top {
+    height: 20rem;
+  }
+
+  .margin-bottom-9 {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -7233,6 +7340,10 @@ blockquote {
   .team4_list {
     grid-row-gap: 3rem;
     grid-template-columns: 1fr;
+  }
+
+  .faq_component {
+    padding: 1.5rem 2rem;
   }
 
   .about-team_cta-icon {
@@ -7288,6 +7399,10 @@ blockquote {
   .padding-section-small {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .home-hero_image-logo {
+    width: 60%;
   }
 }
 
@@ -7506,6 +7621,10 @@ blockquote {
     height: 90vh;
   }
 
+  .home-hero_slider {
+    min-height: 19rem;
+  }
+
   .home-hero_logo {
     height: 5rem;
   }
@@ -7628,7 +7747,7 @@ blockquote {
   }
 
   .about-team_wrapper {
-    height: 15rem;
+    height: 12.5rem;
   }
 
   .about-team_overlay {
@@ -7947,7 +8066,23 @@ blockquote {
     padding-right: 0;
   }
 
-  .margin-bottom-8, .margin-bottom-9, .margin-bottom-10 {
+  .cta_footer {
+    grid-row-gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .margin-bottom-8, .margin-bottom-9 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .faq1_answer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .margin-bottom-10 {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -7967,8 +8102,20 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
+  .faq_component {
+    padding: 1rem 1.7rem;
+  }
+
+  .faq_question-wrapper {
+    grid-template-columns: 2.5rem 1fr;
+  }
+
+  .faq_number {
+    font-size: 2rem;
+  }
+
   .about-team_cta-wrapper {
-    height: 15rem;
+    height: 100%;
   }
 
   .margin-bottom-12 {
